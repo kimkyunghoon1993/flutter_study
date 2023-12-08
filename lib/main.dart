@@ -10,27 +10,27 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      appBar: AppBar(title: Text('앱'),backgroundColor: Colors.green,),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Icon(Icons.star),
-          Icon(Icons.star),
-          Icon(Icons.star),
-        ],
-      ),
-          bottomNavigationBar: BottomAppBar(
-            child: Row(
+        home: Center(
+          child: Scaffold(
+                appBar: AppBar(
+          title: Text('앱'),
+
+                ),
+                body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(Icons.star),
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ],
+                ),
+                bottomNavigationBar: BottomAppBar(
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page),
-            ],
-            ),
           ),
-    ));
+                ),
+              ),
+        ));
   }
 }
